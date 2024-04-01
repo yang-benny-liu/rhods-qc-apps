@@ -5,7 +5,7 @@ from sklearn.preprocessing import RobustScaler
 
 def preprocess(data_folder='./data'):
     print('preprocessing data')
-
+    data_folder = './data'
     df = read_csv(f'{data_folder}/data.csv', index_col=0)
 
     rob_scaler = RobustScaler()
