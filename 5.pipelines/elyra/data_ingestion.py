@@ -22,7 +22,7 @@ def ingest_data(data_object_name='', data_folder='./data'):
         's3', endpoint_url=s3_endpoint_url,
         aws_access_key_id=s3_access_key, aws_secret_access_key=s3_secret_key
     )
-
+    data_folder='./data'
     s3_client.download_file(
         s3_bucket_name,
         data_object_name,
